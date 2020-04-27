@@ -1,0 +1,6 @@
+whitelist
+{
+	materials\temp\...          any
+	materials\vgui\logos\...    any
+	materials\vgui\logos\ui\... any
+}

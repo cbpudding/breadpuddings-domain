@@ -1,0 +1,14 @@
+whitelist
+{
+	sound\...                            trusted_source
+	models\...                           trusted_source
+	materials\...                        trusted_source
+	particles\...                        trusted_source
+	scripts\game_sounds.txt              trusted_source
+	scripts\game_sounds_manifest.txt	 trusted_source
+	scripts\game_sounds_player.txt       trusted_source
+	scripts\game_sounds_vo.txt           trusted_source
+	scripts\game_sounds_vo_handmade.txt  trusted_source
+	scripts\game_sounds_weapons.txt      trusted_source
+	scripts\soundmixers.txt              trusted_source
+}

@@ -20,6 +20,7 @@ tf/stats.txt
 tf/steam.inf
 tf/*.cache
 tf/*.vpk
+autoupdate.cfg
 srcds_linux
 srcds_run
 steam_appid.txt

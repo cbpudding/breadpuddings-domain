@@ -1,0 +1,4 @@
+ctf_asdpickup_a5
+ctf_covid19_a2
+ctf_skyway_a6
+ctf_wichita_a3

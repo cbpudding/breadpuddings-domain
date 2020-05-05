@@ -10,6 +10,7 @@ tf/addons/sourcemod/extensions/
 tf/addons/sourcemod/gamedata/
 tf/addons/sourcemod/logs/
 tf/addons/sourcemod/plugins/
+tf/addons/sourcemod/scripting/compiled/
 tf/addons/sourcemod/scripting/include/
 tf/addons/sourcemod/scripting/compile.sh
 tf/addons/sourcemod/scripting/spcomp

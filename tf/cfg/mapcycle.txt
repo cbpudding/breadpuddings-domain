@@ -1,11 +1,11 @@
+ctf_aaaa_a9
 ctf_acidlab_a2
 ctf_bfr_a1
-ctf_cccc_a14
 ctf_covid19_a2
 ctf_dinner_a2
 ctf_garbage_a1
 ctf_kelly_a10
-ctf_skyway_a9
+ctf_skyway_a10
 ctf_raccoons_mc3_a3
-ctf_wichita_a4a
+ctf_wichita_a5
 htf_zythe_piuc_a2

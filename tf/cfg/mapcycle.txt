@@ -7,5 +7,5 @@ ctf_garbage_a1
 ctf_kelly_a10
 ctf_skyway_a10
 ctf_raccoons_mc3_a3
-ctf_wichita_a5
+ctf_wichita_a6
 htf_zythe_piuc_a2

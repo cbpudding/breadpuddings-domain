@@ -12,9 +12,12 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE. */
 
 /* Changelog:
+Version 1.1.0(May 7, 2020):
++ Implemented a feature that removes the round timer
 Version 1.0.0(May 5, 2020):
 + Implemented friendly fire at the end of a round */
 
+#include <sdktools>
 #include <sourcemod>
 
 ConVar mp_friendlyfire;
@@ -23,7 +26,7 @@ public Plugin myinfo = {
 	name = "Breadpudding's CTF",
 	author = "Alexander Hill",
 	description = "A plugin to make some small tweaks while keeping the server vanilla-like",
-	version = "1.0.0",
+	version = "1.1.0",
 	url = "https://github.com/cbpudding/breadpuddings-domain"
 };
 
@@ -39,5 +42,10 @@ public void OnRoundEnd(Event event, const char[] name, bool dontBroadcast) {
 }
 
 public void OnRoundStart(Event event, const char[] name, bool dontBroadcast) {
+	int team_round_timer = FindEntityByClassname(-1, "team_round_timer");
 	mp_friendlyfire.BoolValue = false;
+	if (team_round_timer != -1) {
+		SetVariantInt(0);
+		AcceptEntityInput(team_round_timer, "SetTime");
+	}
 }

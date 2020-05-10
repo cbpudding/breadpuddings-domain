@@ -29,7 +29,7 @@ public Plugin myinfo = {
 	name = "Breadpudding's CTF",
 	author = "Alexander Hill",
 	description = "A plugin to make some small tweaks while keeping the server vanilla-like",
-	version = "1.1.0",
+	version = "1.1.1",
 	url = "https://github.com/cbpudding/breadpuddings-domain"
 };
 

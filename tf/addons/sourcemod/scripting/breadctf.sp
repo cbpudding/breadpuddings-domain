@@ -12,6 +12,8 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE. */
 
 /* Changelog:
+Version 1.1.2(May 10, 2020):
+* Hotfix for Hold the Flag maps
 Version 1.1.1(May 10, 2020):
 * Prevented custom round timers from being visible
 * Prevented the announcer from saying "one" at the beginning of a match
@@ -29,7 +31,7 @@ public Plugin myinfo = {
 	name = "Breadpudding's CTF",
 	author = "Alexander Hill",
 	description = "A plugin to make some small tweaks while keeping the server vanilla-like",
-	version = "1.1.1",
+	version = "1.1.2",
 	url = "https://github.com/cbpudding/breadpuddings-domain"
 };
 
@@ -45,9 +47,13 @@ public void OnRoundEnd(Event event, const char[] name, bool dontBroadcast) {
 }
 
 public void OnRoundStart(Event event, const char[] name, bool dontBroadcast) {
-	int team_round_timer = FindEntityByClassname(-1, "team_round_timer");
-	mp_friendlyfire.BoolValue = false;
-	if (team_round_timer != -1) {
-		AcceptEntityInput(team_round_timer, "Kill");
+	char buffer[5];
+	GetCurrentMap(buffer, 4);
+	if(strcmp("htf_", buffer) != 0) {
+		int team_round_timer = FindEntityByClassname(-1, "team_round_timer");
+		mp_friendlyfire.BoolValue = false;
+		if (team_round_timer != -1) {
+			AcceptEntityInput(team_round_timer, "Kill");
+		}
 	}
 }

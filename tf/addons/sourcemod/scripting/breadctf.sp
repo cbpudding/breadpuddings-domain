@@ -12,8 +12,11 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 PERFORMANCE OF THIS SOFTWARE. */
 
 /* Changelog:
+Version 1.1.1(May 10, 2020):
+* Prevented custom round timers from being visible
+* Prevented the announcer from saying "one" at the beginning of a match
 Version 1.1.0(May 7, 2020):
-+ Implemented a feature that removes the round timer
++ Implemented a feature that removes custom round timers
 Version 1.0.0(May 5, 2020):
 + Implemented friendly fire at the end of a round */
 
@@ -45,7 +48,6 @@ public void OnRoundStart(Event event, const char[] name, bool dontBroadcast) {
 	int team_round_timer = FindEntityByClassname(-1, "team_round_timer");
 	mp_friendlyfire.BoolValue = false;
 	if (team_round_timer != -1) {
-		SetVariantInt(0);
-		AcceptEntityInput(team_round_timer, "SetTime");
+		AcceptEntityInput(team_round_timer, "Kill");
 	}
 }

@@ -6,6 +6,10 @@ ctf_dinner_a2
 ctf_garbage_a1
 ctf_kelly_b4
 ctf_skyway_a14
+ctf_stumbleshaft_a2
 ctf_raccoons_mc3_a3
+ctf_rubble_yard_a2
+ctf_rotors_a1a
+ctf_upndown_a1
 ctf_wichita_a13
 htf_zythe_piuc_a2

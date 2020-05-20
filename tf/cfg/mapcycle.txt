@@ -1,6 +1,7 @@
 ctf_aaaa_a20
 ctf_acidlab_a2
 ctf_bfr_a1
+ctf_cavendish_canyon_a2_test
 ctf_covid19_a2
 ctf_dinner_a2
 ctf_garbage_a1

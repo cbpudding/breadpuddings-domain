@@ -4,13 +4,16 @@ ctf_bfr_a1
 ctf_cavendish_canyon_a2_test
 ctf_covid19_a2
 ctf_dinner_a2
+ctf_dularia_a8a
 ctf_garbage_a1
 ctf_kelly_b4
 ctf_skyway_a14
+ctf_spacemine_a8
 ctf_stumbleshaft_a2
 ctf_raccoons_mc3_a3
 ctf_rubble_yard_a2
 ctf_rotors_a1a
 ctf_upndown_a1
+ctf_urbanbrook_rc1a
 ctf_wichita_a13b
 htf_zythe_piuc_a2
